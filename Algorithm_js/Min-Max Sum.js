@@ -1,0 +1,21 @@
+function miniMaxSum(arr) {
+    arr.sort((a,b) => a-b)
+    let min=0, max=0;
+    
+    
+   for(let i=0;  i<arr.length-1  ;i++)
+   {
+       
+       min=min+arr[i];
+    
+       
+   }
+   
+   for(let j=1; j<arr.length; j++)
+   {
+      max=max+arr[j]; 
+       
+   }
+   console.log(min,max);
+
+}
